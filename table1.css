@@ -1,0 +1,30 @@
+.style
+{
+    border: 2px solid black; 
+    margin-left: 41%;
+    margin-right:40%; 
+    padding: 20px 20px 20px 20px;
+    border-spacing: 2;
+    bo
+    
+}
+
+.color{
+    background-color:yellow;
+}
+.pink{
+    background-color: violet;
+}
+.acqa{
+    background-color: aqua;
+}
+.green{
+    background-color: green;
+}
+
+  .frame
+  {
+      display: flex;
+      justify-content: center;
+
+  }

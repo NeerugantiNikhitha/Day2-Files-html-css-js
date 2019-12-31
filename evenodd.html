@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>check number</title>
+    <style>
+        div{
+            width: 500px;
+            height: 350px;
+        background-color:aqua;
+        margin-top: 30px;
+        font-size:xx-large;
+        font-style: italic;
+        background-color: chocolate;
+ 
+        }
+    </style>
+    <script>
+        function checkNumber(){
+  alert("check number is called.");
+ var number=document.getElementById("textNumber").value;
+ var resultStr="";
+ if(number%2==0)
+ {
+   resultStr=number+" "+"is even number"  
+ } else {
+    resultStr=number+" "+"is odd number"  
+ }
+ document.getElementById("result").innerHTML=resultStr;
+ document.getElementById("result").style.color ="pink";
+
+        }
+    </script>
+</head>
+<body>
+    <form >
+        <label> Enter Number</label>
+        <input type="text" id="textNumber" placeholder="enter number"> 
+        <input type="button" value="check Number" onclick="checkNumber()">
+    </form>
+    <div id="result">
+  Result will go here.
+    </div>
+</body>
+</html>

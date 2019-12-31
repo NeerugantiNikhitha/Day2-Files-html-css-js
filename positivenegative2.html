@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>check number</title>
+    <style>
+        div{
+            width: 500px;
+            height: 350px;
+        background-color:aqua;
+        margin-top: 30px;
+ 
+        }
+    </style>
+    <script>
+        function checkNumber(){
+  alert("check number is called.");
+ var number=document.getElementById("textNumber").value;
+ var resultStr="";
+ if (number>0) {
+     resultStr="Number="+number+"positive number";
+ } else {
+    resultStr="Number="+number+"negative number";
+ }
+ document.getElementById("result").innerHTML=resultStr;
+        }
+    </script>
+</head>
+<body>
+    <form >
+        <label> Enter Number</label>
+        <input type="text" id="textNumber" placeholder="enter number"> 
+        <input type="button" value="check Number" onclick="checkNumber()">
+    </form>
+    <div id="result">
+   Result will go here.
+    </div>
+</body>
+</html>

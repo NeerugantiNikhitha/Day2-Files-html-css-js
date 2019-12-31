@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>check number</title>
+    <style>
+        div{
+            width: 500px;
+            height: 350px;
+        background-color:lightpink;
+        margin-top: 30px;
+        font-size: xx-large;
+        font-style: italic;
+ 
+        }
+    </style>
+    <script>
+        function checkNumber()
+        {
+ 
+ var number=document.getElementById("textNumber").value;
+ var t1=0,t2=1,nextterm;
+ var resultStr="fibanocci series is"+" ";
+ for(var i=1;i<=number;i++){
+     resultStr=resultStr+t1;
+     nextterm=t1+t2;
+     t1=t2;
+     t2=nextterm;
+ }
+document.getElementById("result").innerHTML=resultStr;
+        }
+    </script>
+</head>
+<body>
+    <form >
+        <label> Enter Number</label>
+        <input type="text" id="textNumber" placeholder="enter number"> 
+        <input type="button" value="check Number" onclick="checkNumber()">
+    </form>
+    <div id="result">
+   Result will go here.
+    </div>
+</body>
+</html>
